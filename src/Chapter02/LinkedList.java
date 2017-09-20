@@ -38,4 +38,13 @@ public class LinkedList {
         }
         System.out.println("Null");
     }
+
+    public LinkNode findTail () {
+        LinkNode curr = head;
+
+        while (curr.next != null) {
+            curr = curr.next;
+        }
+        return curr;
+    }
 }
